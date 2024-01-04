@@ -1,0 +1,228 @@
+/* normalize */
+body,
+div,
+header,
+html,
+img,
+li,
+main,
+ol,
+section,
+span,
+strong {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    background: 0 0;
+}
+main,
+section {
+    display: block;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+}
+html,
+body {
+    height: 100%;
+}
+
+strong {
+    font-weight: bold;
+}
+img {
+    font-size: 0;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+    color: transparent;
+}
+ol {
+    list-style: none;
+}
+button {
+    font: inherit;
+    margin: 0;
+    color: inherit;
+    text-transform: none;
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* scaffolding */
+* {
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: " ";
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0
+}
+.clearfix:after {
+    clear: both;
+}
+
+.fl {
+    float: left
+}
+.fr {
+    float: right
+}
+
+html {
+    font-size: 625%;
+    background-color: #171717;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    font-size: .14em;
+    line-height: 1.5;
+    color: #fff;
+    background: url(images/bg-dark-grain.png) repeat center #171717;
+    position: relative;
+}
+
+.container {
+    width: 7.4rem;
+    margin: 0 auto;
+    padding: 0 .16rem;
+}
+
+.header {
+    box-shadow: inset 0 0 0 1px rgba(31,31,31,.66), 0 0 10px rgba(0,0,0,.75), 0 0 10px rgba(0,0,0,.75);
+    background-image: linear-gradient(to bottom,#292c2f 0,#191c1f 100%);
+    background-color: #212427;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .12rem 0;
+    color: #ddd;
+}
+.header-logo-image {
+    height: .18rem;
+    width: auto;
+}
+.header-logo-text {
+    font-size: .24rem;
+    line-height: 1;
+    /* font-weight: 700; */
+    margin-left: .08rem;
+    letter-spacing: 1px;
+}
+
+
+/* buttons */
+.btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    background-color: transparent;
+    white-space: nowrap;
+    user-select: none;
+    font-size: .16rem;
+    line-height: .2rem;
+    padding: .08rem .16rem;
+    border-radius: .04rem;
+    outline: none !important;
+    border: none;
+    color: #fff;
+    letter-spacing: 1px;
+    transition-property: color, background, text-shadow, box-shadow, border-color;
+    transition-duration: .25s;
+    background-position: 0 100%;
+    background-size: 100% 150%;
+}
+.btn[disabled] {
+    opacity: .3;
+}
+
+.btn:active,
+.btn:focus,
+.btn:hover {
+    background-position: 0 0
+}
+
+.btn-primary {
+    background-color: #a1c25a;
+    background-image: linear-gradient(to bottom,#bddb7e 0,#85a936 100%);
+    color: #053919;
+}
+
+.btn-danger {
+    background-color: #da4f49;
+    background-image: linear-gradient(to bottom,#ee5f5b 0,#bd362f 100%);
+    color: #fff;
+}
+
+.main {
+    padding: .2rem 0;
+}
+
+.main-actions .btn + .btn {
+    margin-left: .1rem;
+}
+.main-actions + .box {
+    margin-top: .16rem;
+}
+
+.box {
+    box-shadow: 1px 1px 5px rgba(0,0,0,.33);
+    background-color: #1a1a1a;
+    border-radius: .04rem;
+    font-size: .16rem;
+}
+.box-header {
+    color: #ccc;
+    background-color: #2b2b2b;
+    background-image: linear-gradient(to bottom,#333 0,#222 100%);
+    border-bottom: 1px solid #090909;
+    padding: .12rem .16rem;
+    border-radius: .04rem .04rem 0 0;
+}
+.box-body {
+    padding: .16rem;
+}
+.box-header-tip {
+    float: right;
+    color: #ad3;
+}
+
+
+.whp-list {
+    padding-left: .24rem;
+    color: #fb3;
+    list-style-type: decimal-leading-zero;
+}
+.whp-list li + li {
+    margin-top: .04rem;
+}
+
+.data-empty {
+    text-align: center;
+    color: #ccc;
+    padding: .3rem 0;
+    letter-spacing: 1px;
+}

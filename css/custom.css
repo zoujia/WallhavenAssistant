@@ -1,0 +1,27 @@
+/* custom css */
+.thumb .thumb-btn.wa-thumb-btn-add {
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #bd362f;
+    line-height: 30px;
+    border-radius: 4px;
+}
+.thumb .thumb-btn.wa-thumb-btn-add .fa-plus {
+    font-size: 18px;
+}
+
+.wa-copied-box {
+    z-index: 10000;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    padding: 14px;
+    font-size: 28px;
+    line-height: 1;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .6);
+    border: 1px solid #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .75);
+    border-radius: 4px;
+}

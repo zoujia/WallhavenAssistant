@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no">
+	<title>查看地址</title>
+	<link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header-logo">
+				<img src="images/logo.png" alt="" class="header-logo-image">
+				<div class="header-logo-text">Wallhaven 图片助手</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<div class="main-actions">
+				<button id="btnCopy" type="button" class="btn btn-primary">复制地址</button>
+				<button id="btnClearStorage" type="button" class="btn btn-danger">一键清空</button>
+			</div>
+			<section class="box">
+				<div class="box-header clearfix">
+					<div class="fl">
+						总数：<strong id="txtTotal"></strong>
+					</div>
+					<div id="txtTip" class="box-header-tip"></div>
+				</div>
+				<div class="box-body">
+					<ol id="imgList" class="whp-list">
+					</ol>
+					<div id="nodataBox" class="data-empty" style="display: none;">
+						暂无数据
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+	<script type="text/javascript" src="js/jquery.1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+</body>
+</html>

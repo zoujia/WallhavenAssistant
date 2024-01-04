@@ -1,0 +1,14 @@
+{
+  "name": "wallhavenassistant",
+  "version": "1.0.0",
+  "description": "Wallhaven 图片收集助手, 批量获取图片地址",
+  "scripts": {},
+  "keywords": [],
+  "author": "zoujia",
+  "devDependencies": {
+    "delete": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
